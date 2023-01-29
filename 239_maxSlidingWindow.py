@@ -2,7 +2,7 @@ class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
         '''
         Time:   O(n*k)
-        Space:  O(1) excluding the return array
+        Space:  O(n*k) excluding the return array, accounting for list slice
         '''
         ans = []
         for i in range(0, len(nums) - k + 1):
